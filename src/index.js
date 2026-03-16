@@ -23,8 +23,8 @@ let kpi = {
 	maxCondition: null
 };
 async function loadData() {
-	const mainDataURL = 'https://raw.githubusercontent.com/adriann03/EDA_Kelompok06_CuacaEnergi/refs/heads/main/data/processed/energy_weather_wide_final.csv';
-	const stackedDataURL = 'https://raw.githubusercontent.com/adriann03/EDA_Kelompok06_CuacaEnergi/refs/heads/main/data/processed/energy_generation_long_melted.csv';
+	const mainDataURL = 'https://raw.githubusercontent.com/adriann03/EDA_Kelompok06_CuacaEnergi/refs/heads/main/data/processed/energy_weather_wide_final_cutted.csv';
+	const stackedDataURL = 'https://raw.githubusercontent.com/adriann03/EDA_Kelompok06_CuacaEnergi/refs/heads/main/data/processed/energy_generation_long_melted_cutted.csv';
 	
 	const [mainRes, stackedRes] = await Promise.all([
 		fetch(mainDataURL),
